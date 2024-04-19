@@ -63,7 +63,7 @@ body {
 }
 /*.logo img {width: 40px;}*/
 .menu {display: flex;}
-.menu li {padding-right: 30px;} /* Ajustado para o lado direito */
+.menu li {padding-right: 30px;} 
 .menu li a {
     display: inline-block;
     text-decoration: none;
@@ -93,12 +93,12 @@ body {
 }
 .open-menu {
     top: 50%;
-    left: 20px; /* Ajustado para o lado esquerdo */
+    left: 20px; 
     transform: translateY(-50%);
 }
 .close-menu {
     top: 20px;
-    left: 20px; /* Ajustado para o lado esquerdo */
+    left: 20px; 
 }
 #check {display: none;}
 @media(max-width: 850px){
