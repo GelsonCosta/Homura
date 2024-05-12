@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(17, 17, 17);
     color: #ccc;
 }
 
@@ -28,7 +28,7 @@ body {
 .search-bar input{
     color: #ccc;
     border:none;
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(17, 17, 17);
     
 }
 
@@ -58,7 +58,7 @@ body {
     align-items: center;
     list-style: none;
     position: relative;
-    background-color: var(--color2);
+    background-color: rgb(17, 17, 17);;
     padding: 12px 20px;
 }
 /*.logo img {width: 40px;}*/
