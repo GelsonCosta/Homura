@@ -62,7 +62,7 @@ body {
     padding: 12px 20px;
 }
 /*.logo img {width: 40px;}*/
-.menu {display: flex;}
+.menu {display: flex; z-index: 100;}
 .menu li {padding-right: 30px;} 
 .menu li a {
     display: inline-block;
