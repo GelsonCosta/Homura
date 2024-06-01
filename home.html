@@ -39,12 +39,16 @@
                     <li><a href="obras.html">Obras</a></li>
                     <li><a href="login.html">Criar Conta</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
+                    <div class="search-bar ">
+                      <i class="fas fa-search"></i>
+                      <input type="text" placeholder="Buscar...">
+                  </div>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
-        <div class="search-bar">
+        <div class=" search-bar-desktop">
             <i class="fas fa-search"></i>
             <input type="text" placeholder="Buscar...">
         </div>
@@ -329,44 +333,44 @@
 
               <div class="wrapper">
                 <div class="form-wrapper sign-in">
-                  <form action="">
+                  <form action="" id="loginForm">
                     <h2>Login</h2>
                     <div class="input-group">
-                      <input type="text" required>
+                      <input type="text" id="usernameLogin">
                       <label for="">Nome de Usuário</label>
                     </div>
                     <div class="input-group">
-                      <input type="password" required>
+                      <input type="password" id="passwordLogin">
                       <label for="">Senha</label>
                     </div>
                     <div class="remember">
                       <label><input type="checkbox"> Lembrar Sessão</label>
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="button" onclick="validateLoginForm()">Login</button>
                     <div class="signUp-link">
                       <p>Não tem uma conta? <a class="signUpBtn-link">Criar conta</a></p>
                     </div>
                   </form>
                 </div>
                 <div class="form-wrapper sign-up">
-                  <form action="">
+                  <form id="signupForm" action="">
                     <h2>Criar Conta</h2>
                     <div class="input-group">
-                      <input type="text" required>
+                      <input type="text" id="usernameSignup">
                       <label for="">Nome de Usuário</label>
                     </div>
                     <div class="input-group">
-                      <input type="email" required>
+                      <input type="email" id="email">
                       <label for="">Email</label>
                     </div>
                     <div class="input-group">
-                      <input type="password" required>
+                      <input type="password" id="passwordSignup">
                       <label for="">Senha</label>
                     </div>
                     <div class="remember">
-                      <label><input type="checkbox"> Concordo com os termos e condições</label>
+                      <label><input type="checkbox" id="termos"> Concordo com os termos e condições</label>
                     </div>
-                    <button type="submit">Criar Conta</button>
+                    <button type="button" onclick="validateSignupForm()">Criar Conta</button>
                     <div class="signUp-link">
                       <p>Já tem uma conta? <a  class="signInBtn-link">Entrar</a></p>
                     </div>
@@ -452,6 +456,8 @@
               </div>
             </div>
           </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/Validacoes.js"></script>
   <script src="js/script.js"></script>
   <script src="js/HomeSliderSettings.js"></script>
 </body>

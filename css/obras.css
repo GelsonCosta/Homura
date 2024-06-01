@@ -22,7 +22,7 @@ body{
 }
 
 .content{
-    width: 1200px;
+    width: 100%;
     height: auto;
     margin: auto;
     color: #fff;
@@ -73,5 +73,20 @@ body{
     color: #ff7200;
     font-size: 65px
 }
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
 
 

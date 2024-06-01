@@ -36,6 +36,24 @@ body {
     outline:none;
 }
 
+.search-bar-desktop {
+    flex: 1;
+    text-align: center;
+    display: inline;
+
+}
+
+.search-bar-desktop input{
+    color: #ccc;
+    border:none;
+    background-color: rgb(17, 17, 17);
+    
+}
+
+.search-bar-desktop input:focus{
+    outline:none;
+}
+
 .user-icon {
     margin-right: 50px;
     color: #ccc;
@@ -102,6 +120,15 @@ body {
 }
 #check {display: none;}
 @media(max-width: 850px){
+    .user-icon
+    {
+        margin-bottom: 20px;
+    }
+
+    .search-bar-desktop
+    {
+        margin-bottom: 20px;
+    }
     .menu {
         flex-direction: column;
         align-items: center;
@@ -121,5 +148,20 @@ body {
     #check:checked ~ .menu {left: 0;} 
 
     .logo{display: block;}
+    
+}
+
+/* barra de pesquisa */
+
+@media(max-width: 600px){
+    .search-bar-desktop {
+        display: none;
+    } 
+
+}
+@media(min-width: 500px){
+    .search-bar {
+        display: none;
+    } 
     
 }
